@@ -206,10 +206,10 @@ def plot_covariance_returns_correlation(correlation, title):
     figure['layout']['yaxis'].update({'domain': [0, .85]})
     figure['layout']['yaxis'].update(xaxis1_layout)
 
-    figure['layout']['xaxis2'].update({'domain': [0, .15]})
-    figure['layout']['xaxis2'].update(xaxis2_layout)
-    figure['layout']['yaxis2'].update({'domain': [.825, .975]})
-    figure['layout']['yaxis2'].update(xaxis2_layout)
+    figure['layout']['xaxis'].update({'domain': [0, .15]})
+    figure['layout']['xaxis'].update(xaxis2_layout)
+    figure['layout']['yaxis'].update({'domain': [.825, .975]})
+    figure['layout']['yaxis'].update(xaxis2_layout)
 
     offline_py.plot(figure, config=config, filename=graph_path, auto_open=False)
     display(HTML('The graph for {} is too large. You can view it <a href="{}" target="_blank">here</a>.'
